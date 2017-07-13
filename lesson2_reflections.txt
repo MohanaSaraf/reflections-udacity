@@ -1,0 +1,6 @@
+Q. What happens when you initialize a repository? Why do you need to do it?
+A. .git hidden file is made that keeps the meta data of all the changes we have made/ the history of all the files. 
+If this is not done then the directory would just remain as a normal folder in the system and which doesnt keep the log of all the changes
+
+Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
+A. the files in the staging area will be committed when the next commit command is executed. Files in the directory will be untracked files - meaning they are yet not part of the repository and thus we will not be able to keep the log of the changes made in these files
