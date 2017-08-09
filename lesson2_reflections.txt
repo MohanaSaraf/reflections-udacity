@@ -26,4 +26,4 @@ A. Helps you visualize which branch consists of which commits
 Q. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 A. When you finally sure of the new branch you were working on you can add it to the master branch and add the feature or the bug you were working on. So merging helps in adding two separate works together. 
 
-Q. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Q. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?Scd 
