@@ -1,6 +1,29 @@
+Q. Why git doesnt create a initial commit of everythin that is in the directory ?
+A. Firstly, you might not want to commit everything in the directory
+   Secondly, you will not be able to write your commit message 
+
+
 Q. What happens when you initialize a repository? Why do you need to do it?
 A. .git hidden file is made that keeps the meta data of all the changes we have made/ the history of all the files. 
-If this is not done then the directory would just remain as a normal folder in the system and which doesnt keep the log of all the changes
+If this is not done then the directory would just remain as a normal folder in the system and which doesnt keep the log of all the changes/or the history of changes made
 
 Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
-A. the files in the staging area will be committed when the next commit command is executed. Files in the directory will be untracked files - meaning they are yet not part of the repository and thus we will not be able to keep the log of the changes made in these files
+A. the files in the staging area will be committed when the next commit command is executed. Files in the directory will be untracked files - meaning they are yet not part of the repository and thus we will not be able to keep the log of the changes made in these files. 
+
+Adding files to the staging area first and then to the repository helps in commiting one logical change together. It would be helpul when one bug fix or one small feature add will make changes in multiple files - this way whenever we go back to that particular commit we can see all the changes together for that particular bug/feature- instead if they were committed separately the commits made will increase in number and difficult to find them in future. 
+
+Q. How can you use the staging area to make sure you have one commit per logical change?
+A. answer in above question
+
+
+Q. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A. Situations when we are making big experimental changes from the original idea it is better to branch out and make the changes as if we like them we can merge them in future. Also, this keeps the overall project much cleaner and easier to deploy as we can keep working on extra features in different branches and our original code remain intact. 
+Secondly, it is a good thing when we are working with collaborators and each one is working on separate feature. The main code stays stable and free of bugs introduced by one of the collaborators while trying new experimental thingsow do the diagrams help you visualize the branch structure?
+
+Q. How do the diagrams help you visualize the branch structure? bug you we
+A. Helps you visualize which branch consists of which commits 
+
+Q. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A. When you finally sure of the new branch you were working on you can add it to the master branch and add the feature or the bug you were working on. So merging helps in adding two separate works together. 
+
+Q. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
